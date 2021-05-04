@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.userdata {
+  display: block;
+  padding: 3rem 5rem 10rem;
+  background-color: rgb(36, 41, 46);
+  color: rgb(200, 225, 255);
+  height: 60vh;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid rgb(0, 112, 243);
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  border-radius: 100%;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: rgb(0, 112, 243);
+}
+
+a {
+  font-weight: 500;
+  color: rgb(0, 112, 243);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 1rem 0.5rem;
+  white-space: nowrap;
+}
+
+.icons {
+  margin-right: 10px;
+  fill: currentcolor;
+  user-select: none;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+.material-icons-outlined {
+  color: rgb(200, 225, 255);
+  background-color: white;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 150px));
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.stats__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(36, 41, 46);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  background-color: black;
+}
+
+.num {
+  color: rgb(246, 248, 250);
+  font-size: 1.5rem;
+}
+
+.num-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-top: 0.75rem;
+  color: rgba(200, 225, 255, 0.7);
+}
+
+@media (max-width: 56.25em) {
+  .userdata {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 25em) {
+  .userdata {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .container {
+    padding-top: 4rem;
+  }
+  .info {
+    display: block;
+  }
+}
+
+@media (max-width: 25em) {
+  .stats {
+    margin-right: 20px;
+  }
+  .stats__item {
+    padding: 1rem 0.5rem;
+  }
+  .num {
+    font-size: 1rem;
+  }
+  .num-label {
+    font-size: 0.5rem;
+  }
+}
+
+.limit {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 1rem;
+}
+.num {
+  color: rgb(106, 115, 125);
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.limit > p {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin: 0px;
+  color: rgb(88, 96.105);
+}
+
+.num {
+  font-size: small;
+}
+/*
+   {rateLimit && (
+        <div className='limit'>
+          <div className='num'>{`${rateLimit.remaining} / ${rateLimit.limit}`}</div>
+          <p>Requests Left</p>
+        </div>
+      )}
+*/

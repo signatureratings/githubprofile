@@ -11,6 +11,15 @@
 # production
 /build
 
+
+
+
+src/calender.svg
+src/icon.png
+src/location.svg
+src/star_black_24dp.svg
+src/code-branch-solid.svg
+
 # misc
 .DS_Store
 .env.local

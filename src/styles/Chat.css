@@ -1,0 +1,67 @@
+.charts {
+  padding: 3rem 5rem;
+  color: rgb(36, 41, 46);
+}
+
+.charts__ {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px !important;
+  margin-top: -8rem !important;
+}
+
+.chart {
+  background-color: white;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 30px -15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.design {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(209, 213, 218) 50%,
+    rgba(255, 255, 255, 0) 0px
+  );
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 2px;
+  padding-bottom: 6px;
+  font-weight: 500;
+}
+
+.chart-container {
+}
+
+.list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.starchart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.starchart > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding-left: 10px;
+}
