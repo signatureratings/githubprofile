@@ -20,7 +20,7 @@ function Home() {
       <img src={logo} alt='githubicon' />
       <h3 className='error'>Username should be a single word</h3>
       <form onSubmit={finduser}>
-        <label for='username'>Find Your Github Profile</label>
+        <label htmlFor='username'>Find Your Github Profile</label>
         <input
           type='text'
           name='username'

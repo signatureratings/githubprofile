@@ -67,8 +67,8 @@ function Chart({ langData, repoData }) {
     ],
   }
 
-  const starchart = stardata.map((number) => (
-    <span className='starchart'>
+  const starchart = stardata.map((number,index) => (
+    <span className='starchart' key={index}>
       <li>{number.x}</li>
       <li>
         <img src={star} alt='star' style={{ color: 'gold' }} />

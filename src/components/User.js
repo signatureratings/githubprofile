@@ -54,8 +54,10 @@ function User() {
           message: 'there is no good profile for this user',
         })
       }
+      else{
       setlangdata(stats)
-      console.log(stats)
+      }
+      //console.log(stats)
     })
   }
 
@@ -79,8 +81,8 @@ function User() {
         return response.json()
       })
       .then((json) => {
-        setrepdata(json)
-        console.log(json)
+       setrepdata(json)
+        //console.log(json)
       })
       .catch((error) => {
         seterror({
@@ -92,7 +94,7 @@ function User() {
       })
   }
 
-  useEffect(() => {
+ useEffect(()=>{
     fetch(`https://api.github.com/rate_limit`)
       .then((response) => response.json())
       .then((json) => {
@@ -105,7 +107,7 @@ function User() {
           })
         }
       })
-  }, [])
+  })
 
   /**
  *    useEffect(() => {
@@ -120,7 +122,7 @@ function User() {
  */
 
   useEffect(() => {
-    getLangData()
+     getLangData()
     getUserData()
     getRepoData()
   }, [])
@@ -133,9 +135,12 @@ function User() {
         ) : (
           <>
             {userdata && <UserData userdata={userdata} rateLimit={ratelimit} />}
+            {/*
             {langdata && repdata && (
               <Chart langData={langdata} repoData={repdata} />
             )}
+*/
+          }
             {repdata && <Repos repoData={repdata} />}
           </>
         )}
